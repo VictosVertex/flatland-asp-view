@@ -10,7 +10,7 @@ type NavigationBarElementProps = {
 
 export default function NavigationBarElement(props: NavigationBarElementProps) {
   const pathname = usePathname();
-  const { title, url, className } = props;
+  const { title, url, className = '' } = props;
 
   return (
     <li className={`group relative ${className || ''}`}>
@@ -27,7 +27,3 @@ export default function NavigationBarElement(props: NavigationBarElementProps) {
     </li>
   );
 }
-
-NavigationBarElement.defaultProps = {
-  className: '',
-};
