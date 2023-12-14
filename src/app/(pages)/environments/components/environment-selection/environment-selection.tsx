@@ -16,11 +16,9 @@ export default function EnvironmentSelection() {
       },
     })
       .then((res) => {
-        console.log(res);
         res
           .json()
           .then((response: EnvironmentsGetAllResponse) => {
-            console.log(response);
             setEnvironments(response.data);
           })
           .catch(() => {});
