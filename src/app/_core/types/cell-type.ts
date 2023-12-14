@@ -1,0 +1,13 @@
+enum CellType {
+  STRAIGHT = 1,
+  SIMPLE_SWITCH = 2,
+  DIAMOND_CROSSING = 3,
+  SINGLE_SLIP = 4,
+  DOUBLE_SLIP = 5,
+  SYMMETRICAL = 6,
+  DEAD_END = 7,
+  TURN_RIGHT = 8,
+  SIMPLE_SWITCH_MIRRORED = 10,
+}
+
+export default CellType;
