@@ -15,7 +15,7 @@ const Section = forwardRef<HTMLElement | null, SectionProps>(
     return (
       <section
         ref={ref}
-        className={`container mx-auto mb-40 min-h-screen w-[600px] max-w-screen-md p-6 ${
+        className={`container mx-auto pt-20 min-h-screen w-[600px] max-w-screen-md p-6 ${
           enabled ? '' : disableStyle
         }`}
       >
