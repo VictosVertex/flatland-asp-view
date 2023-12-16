@@ -22,7 +22,7 @@ const NumberOfOrientations: Record<TileType, number> = {
   [CellType.DEAD_END]: 4,
   [CellType.TURN_RIGHT]: 4,
   [CellType.SIMPLE_SWITCH_MIRRORED]: 4,
-  [UnitType.STATION]: 1,
+  [UnitType.STATION]: 2,
   [UnitType.AGENT]: 4,
 };
 
