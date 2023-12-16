@@ -224,6 +224,8 @@ const TileCanvas = forwardRef<TileCanvasMethods, TileCanvasProps>(
       ) => {
         const position: Position = { x, y };
 
+        if (position.x >= width || position.y >= height) return;
+
         let tile: Tile | null = null;
 
         if (tileTypeIsCellType(tileType)) {
